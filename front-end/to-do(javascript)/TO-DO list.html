@@ -1,0 +1,112 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TO-DO list</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+</head>
+<body>
+    <h1>TO-DO list</h1>
+    <h3>enter your to-do in the box given below</h3>
+    <input id="list">
+    <button onclick="add()" class="buttonadd">add</button>
+    <ol id="ol">
+        <li> hi! welcome enter your to-do list // you can delete me 
+            <button onclick="deleteitem(event)">delete</button>
+                
+        </li>
+    </ol>
+</body>
+</html>
+<script>
+    var list=document.getElementById("list")
+var ol=document.getElementById("ol")
+function add()
+{
+    var newitem=document.createElement("li")
+    newitem.innerHTML=list.value+"<button class='buttonadd' onclick='deleteitem(event)'>delete</button>"
+    ol.append(newitem)
+}
+function deleteitem(event)
+{
+    event.target.parentElement.remove()
+    
+}
+
+
+</script>
+<style>
+    html{
+    background-color:#333333;
+}
+h1{
+    text-align: center;
+    padding-bottom:30px;
+    padding-top: 30px;
+    background-color:#001F3F;
+    color:#c1d83f;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+h1:hover{
+    transform: scale(1.1);
+}
+
+h3{
+    color: #c1d83f;
+    word-spacing: .5px;
+    letter-spacing: .5px;
+}
+
+li{
+    color: #c1d83f;
+    word-spacing: .5px;
+    letter-spacing: .75px;
+}
+
+input{
+    width: 30%;
+    height: 5%;
+    border: 3px solid #001F3F;    ;
+    border-radius: 10px;
+    padding-right: 3px;
+}
+button{
+    background-color:#001F3F;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px;
+  color: #c1d83f;
+  transition-duration: 1s;
+}
+
+.buttonadd{
+    background-color:#001F3F;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  border-radius: 25px;
+  color: #c1d83f;
+  transition-duration: 1s;
+}
+.buttonadd:hover{
+    transform: scale(1.1);
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+</style>

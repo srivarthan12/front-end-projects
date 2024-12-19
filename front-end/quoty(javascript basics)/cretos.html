@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cretos</title>
+    <link rel="stylesheet" href="C:\Users\Raja-Manickam\Desktop\quoty\cretos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="titlebar">
+        <h1>Quoty</h1>
+        <h6>Create quotes</h6>
+    </div>
+    <button class="addbutton" id="addpopupbutton">+</button>
+    <div class="container">
+        <div class="quote1">
+            <h5>ASSASSINS CREED(videogame)</h5>
+            <P>We are the shadows who serve the light</P>
+            <button onclick="deletequote(event)" class="button">delete</button>
+        </div>
+        <div class="quote1">
+            <h5>BATMAN</h5>
+            <P>Its not who I am underneath, but what I do that defines me</P>
+            <button onclick="deletequote(event)" class="button">delete</button>
+        </div>
+        <div class="quote1">
+            <h5>JOKER</h5>
+            <P>Introduce a little anarchy, upset the established order, and everything becomes chaos.</P>
+            <button onclick="deletequote(event)" class="button">delete</button>
+        </div>
+        <div class="quote1">
+            <h5>THANOS</h5>
+            <P>You could not live with your own failure. And where did that bring you? Back to me.</P>
+            <button onclick="deletequote(event)" class="button">delete</button>
+        </div>
+        <div class="quote1">
+            <h5>KAMAL HASSAN</h5>
+            <P>naa kadavul illa nu sollala kadavul irundha nalla irukum nu sollren</P>
+            <button onclick="deletequote(event)" class="button">delete</button>
+        </div>
+    </div>
+    <div class="popupoverlay" id="popupoverlayq"></div>
+    <div class="popupbox" id="popupboxq">
+        <h2>add quote</h2>
+        <form>
+            <input type="text" placeholder="quote source" id="quotesourceinput">
+            <textarea placeholder="type quote" id="quotedescription"></textarea>
+            <button class="addquote">Add</button>
+            <button class="cancelpopup" id="cancelpopup1">X</button>
+        </form>
+    </div>
+    <script src="C:\Users\Raja-Manickam\Desktop\quoty\cretos.js"></script>   
+    
+    
+</body>
+</html>
